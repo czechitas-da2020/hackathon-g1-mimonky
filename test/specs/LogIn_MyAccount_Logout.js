@@ -30,7 +30,7 @@ describe('Epic Account Login/Registration - Log in, information about my account
     beforeEach("",()=>{
         browser.url("http://czechitas-datestovani-hackathon.cz/en/")  
     })
-    it("log in, using the registration data and log out - 44,45",()=>{
+    it("log in, using the registration data and log out - ODHMA 44,45",()=>{
         //I will verify, that I can log in and log out with the new user data
         browser.pause(3000)
         $(".hide_xs").click()
@@ -42,7 +42,7 @@ describe('Epic Account Login/Registration - Log in, information about my account
         $('.dropdown-menu a[title="Log me out"]').click()
         expect($(".hide_xs")).toBeDisplayed() 
     })
-    it("my account page has following links-46",()=>{
+    it("my account page has following links-ODHMA 46",()=>{
         //I will log in with the new user data and check, if I can see all links, that are specified in user story
         $(".hide_xs").click()
         $("#email").setValue(eMail)

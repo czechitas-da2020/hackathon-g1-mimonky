@@ -2,14 +2,14 @@ describe('Epic Accounts – login/registration - Authentication page and create 
     before("",()=>{
         browser.url("http://czechitas-datestovani-hackathon.cz/en/")
     })
-    it("check all fields on authentication page - 42",()=>{
+    it("check all fields on authentication page - ODHMA 42",()=>{
         //I will check, if all the fields from user story 42 are displayed
         $(".hide_xs").click()
         expect($(".hide_xs")).toBeDisplayed()
         expect($("#SubmitCreate")).toBeDisplayed()
         expect($(".lost_password.form-group")).toBeDisplayed()
     })
-    it("fill registration form with valid data and log in - 43",()=>{
+    it("fill registration form with valid data and log in -ODHMA 43",()=>{
         //I will register new user with unique e-mail adress
         $(".hide_xs").click()
         let date = new Date().valueOf()
